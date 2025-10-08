@@ -20,7 +20,7 @@ function createWindow() {
     },
     titleBarStyle: 'hiddenInset',
     show: false,
-    title: 'Continuum - Sermon Study Environment',
+        title: 'SermonStudio - Professional Sermon Preparation',
   });
 
   // Load the React app

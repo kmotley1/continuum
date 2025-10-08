@@ -1,4 +1,4 @@
-# Continuum Project Structure
+# SermonStudio Project Structure
 
 ## Overview
 This is an Electron-based sermon study application with React frontend and TypeScript.
@@ -6,7 +6,7 @@ This is an Electron-based sermon study application with React frontend and TypeS
 ## Directory Structure
 
 ```
-CONTINUUM/
+SERMONSTUDIO/
 ├── src/                          # Source code
 │   ├── main/                     # Electron main process
 │   │   ├── main.ts              # Main process entry point

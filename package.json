@@ -1,9 +1,9 @@
 {
-  "name": "continuum",
+  "name": "sermon-studio",
   "version": "1.0.0",
-  "description": "A desktop study environment for pastors that merges Logos Bible Software with AI",
+  "description": "SermonStudio - Professional sermon preparation workspace with integrated Logos Bible Software and ChatGPT",
   "main": "dist/main/main.js",
-  "author": "Continuum Team",
+  "author": "SermonStudio Team",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",

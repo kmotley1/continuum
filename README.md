@@ -1,8 +1,8 @@
-# Continuum - Sermon Study Environment
+# SermonStudio - Professional Sermon Preparation
 
 A powerful Electron-based desktop application designed for sermon preparation and Bible study, featuring integrated access to Logos Bible Software and ChatGPT in a unified 3-panel workspace.
 
-## 🎯 Overview
+## Overview
 
 Continuum provides pastors and Bible teachers with a streamlined environment for sermon preparation, combining:
 
@@ -11,7 +11,7 @@ Continuum provides pastors and Bible teachers with a streamlined environment for
 - **AI Workspace**: ChatGPT integration for research and content assistance
 - **Notes System**: Rich text editor with search and organization features
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 - **3-Panel Layout**: Simultaneous access to planning, Bible study, and AI assistance
@@ -28,7 +28,7 @@ Continuum provides pastors and Bible teachers with a streamlined environment for
 - **Vite Build System**: Fast development and optimized production builds
 - **Auto-updater Ready**: Built-in support for application updates
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ 
@@ -40,8 +40,8 @@ Continuum provides pastors and Bible teachers with a streamlined environment for
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/continuum.git
-   cd continuum
+   git clone https://github.com/yourusername/sermon-studio.git
+   cd sermon-studio
    ```
 
 2. **Install dependencies**
@@ -60,10 +60,10 @@ Continuum provides pastors and Bible teachers with a streamlined environment for
    npm run electron
    ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
-continuum/
+sermon-studio/
 ├── src/                          # Source code
 │   ├── main/                     # Electron main process
 │   │   ├── main.ts              # App lifecycle & window management
@@ -93,7 +93,7 @@ continuum/
 └── [config files]              # package.json, tsconfig.json, etc.
 ```
 
-## 🛠️ Development
+## Development
 
 ### Available Scripts
 
@@ -127,7 +127,7 @@ The app uses Electron's BrowserView to embed:
 
 BrowserViews are positioned and resized dynamically based on panel layout changes.
 
-## 📦 Distribution
+## Distribution
 
 ### Building Distribution Packages
 
@@ -146,7 +146,7 @@ BrowserViews are positioned and resized dynamically based on panel layout change
 - **Windows**: x64 installer
 - **Linux**: AppImage (planned)
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 - `NODE_ENV`: Set to 'development' or 'production'
@@ -157,7 +157,7 @@ User preferences are stored in:
 - **macOS**: `~/Library/Application Support/continuum/`
 - **Windows**: `%APPDATA%/continuum/`
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -183,7 +183,7 @@ If the application becomes unstable:
 2. **Clear application data**: Delete user preferences folder
 3. **Reset to defaults**: Delete all stored data and restart
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -197,18 +197,18 @@ If the application becomes unstable:
 - Add tests for new features
 - Update documentation as needed
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Logos Bible Software** for providing the Bible study platform
 - **OpenAI** for ChatGPT integration
 - **Electron** for the cross-platform desktop framework
 - **React** and **TypeScript** communities for excellent tooling
 
-## 📞 Support
+## Support
 
 For support, feature requests, or bug reports:
 - Open an issue on GitHub
