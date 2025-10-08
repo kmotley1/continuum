@@ -1,0 +1,66 @@
+CONTINUUM - QUICK DISTRIBUTION FOR YOUR PASTOR
+==============================================
+
+🚀 FASTEST WAY TO GET CONTINUUM TO YOUR PASTOR IN ILLINOIS:
+
+OPTION 1: ZIP AND EMAIL/CLOUD (5 minutes)
+------------------------------------------
+1. Create a zip file of the app:
+   cd release/mac-arm64
+   zip -r Continuum-Test.zip Continuum.app
+
+2. Share via:
+   - Email (if under 25MB)
+   - Google Drive / Dropbox / iCloud
+   - WeTransfer (free, up to 2GB)
+
+3. Send your pastor:
+   - The zip file
+   - Instructions to unzip and drag to Applications
+   - This guide
+
+OPTION 2: BUILD FOR WINDOWS (if pastor has PC)
+----------------------------------------------
+1. Run: npm run dist -- --win
+2. Share the .exe installer from release/ folder
+
+OPTION 3: CLOUD STORAGE LINK
+----------------------------
+1. Upload to Google Drive/Dropbox
+2. Share the public link
+3. Pastor downloads directly
+
+📋 INSTRUCTIONS FOR YOUR PASTOR:
+================================
+
+INSTALLATION:
+1. Download the Continuum-Test.zip file
+2. Double-click to unzip
+3. Drag "Continuum.app" to Applications folder
+4. Open from Applications or Spotlight search
+
+FIRST RUN:
+1. App will create its own user data folder
+2. No login required - completely separate from your data
+3. Can start using immediately
+
+FEATURES TO TEST:
+- Create a test sermon note
+- Try the Calendar/Planner
+- Test "Send to Chat" functionality
+- Test Logos integration (if they have Logos account)
+
+DATA ISOLATION:
+- Each user gets their own data folder
+- No shared accounts or login required
+- Completely separate from your notes
+
+TROUBLESHOOTING:
+- If app won't open: Right-click → Open (macOS security)
+- If Logos doesn't load: Check internet connection
+- If ChatGPT doesn't load: Check internet connection
+
+===============================================
+
+
+

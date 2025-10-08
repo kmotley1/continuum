@@ -1,0 +1,61 @@
+Continuum is a desktop study environment designed for pastors who want to plan and prepare sermons without the friction of context switching. It merges Logos Bible Software with AI in one seamless interface — giving pastors the focus, speed, and organization they need to move from study to sermon.
+
+1. Core Problem to Solve
+
+Context-Switching: Pastors research deeply in Logos (commentaries, cross-references, original languages) but then toggle to ChatGPT for brainstorming outlines, illustrations, and simplification. The back-and-forth costs time and focus.
+
+Fragmented Workflow: Copy-pasting between tools is tedious and interrupts the creative flow.
+
+Distraction Risk: Switching windows and reformatting outputs makes sermon prep feel scattered, especially under weekly time pressure.
+
+
+2. Continuum’s 3-Panel Study Flow
+
+Left Panel: Sermon Planner
+
+Organized by Sunday dates and sermon series, giving pastors a structured view of upcoming services.
+
+Context awareness means when a pastor clicks on a Sunday, Continuum “knows” the relevant series and past notes.
+
+Acts as the organizational backbone that ties research and AI conversations into a single timeline.
+
+Middle Panel: Logos Environment
+
+The Logos web app runs here, letting pastors highlight verses, commentaries, or original language notes.
+
+Highlights can be passed directly into AI with one keystroke.
+
+Right Panel: AI Workspace
+
+This is the pastor’s own ChatGPT account (authenticated directly, not resold).
+
+AI receives context from Logos highlights or planner notes automatically.
+
+Pastors can ask:
+
+“Summarize this commentary in 3 points for my sermon.”
+
+“Give me illustration ideas for this passage.”
+
+“Remind me what I drafted for last week’s sermon intro.”
+
+
+3. Technical Clarification
+
+No new AI model. Continuum simply provides a bridge between Logos and the pastor’s existing ChatGPT session.
+
+Bridge Layer: Hotkeys and shortcuts pass text, verses, or notes into ChatGPT instantly.
+
+Lightweight Desktop App: Functions as a consistent, distraction-free workspace instead of two disconnected browser tabs.
+
+
+
+4. Positioning
+
+Continuum is not just a wrapper. It’s:
+
+A context-aware sermon workspace that remembers the relationship between Sundays, sermon series, and study notes.
+
+A focus tool that eliminates the friction of juggling Logos and AI separately.
+
+A trusted layer that leaves control in the pastor’s hands (they use their own Logos and their own OpenAI accounts).

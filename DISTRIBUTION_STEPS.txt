@@ -1,0 +1,287 @@
+CONTINUUM - DESKTOP APP DISTRIBUTION GUIDE
+==========================================
+
+OVERVIEW:
+This guide covers everything needed to distribute Continuum as a real desktop application 
+for the Apple App Store, Microsoft Store, and direct distribution.
+
+================================================================================
+🍎 APPLE APP STORE (macOS) - $99/year
+================================================================================
+
+PREREQUISITES:
+1. Apple Developer Account ($99/year)
+   - Sign up at: https://developer.apple.com
+   - Get your Team ID from the account dashboard
+   - Download and install Xcode (free from App Store)
+
+2. Code Signing Certificates:
+   - Create certificates in Keychain Access
+   - Generate provisioning profiles
+   - Export certificate as .p12 file
+
+SETUP STEPS:
+1. Replace "YOUR_TEAM_ID" in package.json with your actual Apple Team ID
+2. Set environment variables:
+   export APPLE_ID="your-apple-id@example.com"
+   export APPLE_ID_PASSWORD="your-app-specific-password"
+   export APPLE_TEAM_ID="YOUR_TEAM_ID"
+   export CSC_LINK="path/to/your/certificate.p12"
+   export CSC_KEY_PASSWORD="certificate-password"
+
+3. Build and sign:
+   npm run dist
+
+4. Upload to App Store:
+   - Use Transporter app or Application Loader
+   - Upload the .dmg file from release/ folder
+   - Submit for review in App Store Connect
+
+REQUIRED ASSETS:
+- App icon (1024x1024px)
+- Screenshots (various device sizes)
+- App description and keywords
+- Privacy policy (required)
+- Terms of service
+
+================================================================================
+🪟 MICROSOFT STORE (Windows) - $19 one-time
+================================================================================
+
+PREREQUISITES:
+1. Microsoft Partner Center Account ($19 one-time fee)
+   - Sign up at: https://partner.microsoft.com
+   - Complete verification process
+
+2. Code Signing Certificate (optional for Store):
+   - Get from DigiCert, Sectigo, or GlobalSign
+   - Or use Microsoft's free certificate for Store apps
+
+SETUP STEPS:
+1. Update package.json Windows target to "appx":
+   "win": {
+     "target": "appx",
+     "publisherName": "CN=Your Company Name",
+     "verifyUpdateCodeSignature": false
+   }
+
+2. Build for Microsoft Store:
+   npm run dist
+
+3. Upload to Partner Center:
+   - Go to Partner Center dashboard
+   - Create new app submission
+   - Upload the .appx file from release/ folder
+
+REQUIRED ASSETS:
+- App icon (various sizes)
+- Screenshots (various device sizes)
+- App description and keywords
+- Privacy policy (required)
+- Age rating questionnaire
+
+================================================================================
+🛒 DIRECT DISTRIBUTION (FREE)
+================================================================================
+
+FOR IMMEDIATE TESTING:
+npm run pack
+- Creates unsigned installers in release/ folder
+- Perfect for testing and sharing with beta users
+
+FOR PRODUCTION DISTRIBUTION:
+npm run dist
+- Creates signed installers (if certificates configured)
+- Files created:
+  * macOS: .dmg installer
+  * Windows: .exe installer
+  * Linux: .AppImage
+
+DISTRIBUTION OPTIONS:
+1. Your own website
+2. GitHub Releases
+3. Direct email/cloud storage
+4. Beta testing platforms (TestFlight, etc.)
+
+================================================================================
+🔧 TECHNICAL SETUP COMPLETED
+================================================================================
+
+FILES ALREADY CREATED:
+✅ package.json - Updated with proper build configuration
+✅ build/entitlements.mac.plist - macOS security entitlements
+✅ build/notarize.js - Apple notarization script
+✅ DISTRIBUTION_GUIDE.md - Detailed technical guide
+✅ scripts/setup-distribution.sh - Quick setup script
+✅ @electron/notarize package installed
+
+BUILD COMMANDS:
+npm run dev          # Development mode
+npm run pack         # Build unsigned version for testing
+npm run dist         # Build signed version for distribution
+npx electron-builder --mac    # Build macOS only
+npx electron-builder --win    # Build Windows only
+npx electron-builder --linux  # Build Linux only
+
+================================================================================
+📋 PRE-SUBMISSION CHECKLIST
+================================================================================
+
+APPLE APP STORE:
+□ Apple Developer Account active ($99/year)
+□ Team ID configured in package.json
+□ Certificates installed and working
+□ App signed and notarized successfully
+□ Privacy policy created and accessible
+□ App Store assets ready (icons, screenshots, description)
+□ Tested on multiple Mac devices
+□ No console errors or crashes
+□ Proper error handling implemented
+□ User documentation available
+
+MICROSOFT STORE:
+□ Microsoft Partner Center account ($19 one-time)
+□ App package built successfully
+□ Privacy policy created and accessible
+□ Store assets ready (icons, screenshots, description)
+□ Tested on multiple Windows devices
+□ Age rating questionnaire completed
+□ No console errors or crashes
+□ Proper error handling implemented
+□ User documentation available
+
+GENERAL REQUIREMENTS:
+□ App thoroughly tested on target platforms
+□ No security vulnerabilities
+□ Proper error handling and user feedback
+□ User documentation and help system
+□ Support contact information
+□ Version numbering follows semantic versioning
+□ Update mechanism planned (electron-updater recommended)
+□ Analytics/crash reporting considered (Sentry, Bugsnag, etc.)
+
+================================================================================
+💰 COST BREAKDOWN
+================================================================================
+
+APPLE APP STORE:
+- Apple Developer Program: $99/year
+- Code signing certificate: Free (included)
+- App Store review: Free
+- Total: $99/year
+
+MICROSOFT STORE:
+- Partner Center account: $19 one-time
+- Code signing certificate: Free (for Store apps)
+- Store review: Free
+- Total: $19 one-time
+
+DIRECT DISTRIBUTION:
+- Hosting/website: $0-20/month (depending on traffic)
+- Code signing certificate: $0-400/year (optional but recommended)
+- Total: $0-500/year (depending on approach)
+
+================================================================================
+🚀 QUICK START COMMANDS
+================================================================================
+
+1. Test the current setup:
+   ./scripts/setup-distribution.sh
+
+2. Build a test version:
+   npm run pack
+
+3. Build for distribution:
+   npm run dist
+
+4. Check release folder:
+   ls -la release/
+
+================================================================================
+🆘 TROUBLESHOOTING COMMON ISSUES
+================================================================================
+
+CODE SIGNING ERRORS:
+- Check certificates are properly installed
+- Verify passwords and file paths
+- Ensure certificates haven't expired
+
+NOTARIZATION FAILS:
+- Verify Apple ID credentials
+- Check Team ID is correct
+- Ensure app is properly signed first
+
+BUILD FAILS:
+- Check all file paths are correct
+- Verify all dependencies are installed
+- Check for TypeScript compilation errors
+
+STORE REJECTION:
+- Review Apple/Microsoft guidelines
+- Check privacy policy requirements
+- Ensure app works without internet (if applicable)
+- Test on clean machines
+
+================================================================================
+📚 ADDITIONAL RESOURCES
+================================================================================
+
+DOCUMENTATION:
+- Electron Builder: https://www.electron.build/
+- Apple App Store Guidelines: https://developer.apple.com/app-store/review/guidelines/
+- Microsoft Store Policies: https://docs.microsoft.com/en-us/legal/windows/agreements/store-policies
+
+TOOLS:
+- Transporter (Apple): https://apps.apple.com/us/app/transporter/id1450874784
+- Application Loader (Apple): Legacy tool, use Transporter instead
+- Partner Center (Microsoft): https://partner.microsoft.com
+
+COMMUNITY:
+- Electron Discord: https://discord.gg/electron
+- Stack Overflow: Tag questions with "electron" and "electron-builder"
+
+================================================================================
+🎯 NEXT STEPS
+================================================================================
+
+IMMEDIATE (Today):
+1. Run: ./scripts/setup-distribution.sh
+2. Test: npm run pack
+3. Decide on distribution strategy (Store vs Direct)
+
+SHORT TERM (This Week):
+1. Get Apple Developer Account if going to App Store
+2. Create privacy policy
+3. Design app icons and screenshots
+4. Test on multiple devices
+
+MEDIUM TERM (This Month):
+1. Set up code signing certificates
+2. Build and test signed versions
+3. Prepare store submissions
+4. Plan update mechanism
+
+LONG TERM (Ongoing):
+1. Monitor user feedback
+2. Regular updates and bug fixes
+3. Consider additional features
+4. Expand to other platforms if successful
+
+================================================================================
+📞 SUPPORT
+================================================================================
+
+If you encounter issues:
+1. Check the DISTRIBUTION_GUIDE.md for detailed technical information
+2. Review Electron Builder documentation
+3. Check Apple/Microsoft developer forums
+4. Test on clean machines to isolate issues
+
+Remember: The security warning you mentioned earlier has been fixed with the 
+Content Security Policy added to index.html. Your app is now ready for 
+professional distribution!
+
+================================================================================
+
+
+

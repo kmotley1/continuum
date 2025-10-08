@@ -1,0 +1,73 @@
+CONTINUUM - INSTALLER TROUBLESHOOTING GUIDE
+==========================================
+
+🚨 ERROR: "Installer integrity check has failed"
+================================================
+
+This error means the installer file got corrupted during download/transfer.
+
+✅ IMMEDIATE SOLUTIONS:
+======================
+
+SOLUTION 1: CLEAN UNINSTALL (DO THIS FIRST)
+--------------------------------------------
+1. Press Windows Key + R
+2. Type: appwiz.cpl
+3. Press Enter
+4. Find "Continuum" → Right-click → "Uninstall"
+5. Restart your computer
+
+SOLUTION 2: DOWNLOAD FRESH INSTALLER
+------------------------------------
+1. Delete the corrupted installer completely
+2. Download fresh copy from provided link
+3. Save to Desktop (not Downloads folder)
+4. Right-click → "Run as administrator"
+
+SOLUTION 3: DISABLE ANTIVIRUS TEMPORARILY
+-----------------------------------------
+1. Temporarily disable Windows Defender Real-time protection
+2. Download and install Continuum
+3. Re-enable protection after installation
+
+SOLUTION 4: USE DIFFERENT BROWSER
+---------------------------------
+Try downloading with:
+- Chrome instead of Edge
+- Edge instead of Chrome
+- Or use a download manager
+
+SOLUTION 5: CHECK FILE INTEGRITY
+--------------------------------
+After downloading, check the file:
+1. Right-click installer → Properties
+2. File size should be: ~140 MB (146,800,640 bytes)
+3. If smaller, file is incomplete - download again
+
+SOLUTION 6: MANUAL INSTALLATION
+--------------------------------
+If installer still fails:
+1. Download the .zip version instead
+2. Extract to C:\Program Files\Continuum\
+3. Create desktop shortcut manually
+
+🔧 ADVANCED TROUBLESHOOTING:
+============================
+
+If all else fails:
+1. Run Windows Update
+2. Check disk for errors: chkdsk C: /f
+3. Try installing in Safe Mode
+4. Use a different user account
+
+📞 GETTING HELP:
+================
+If none of these work:
+1. Take a screenshot of the error
+2. Note your Windows version (Settings → About)
+3. Contact support with these details
+
+The fresh installer should work perfectly!
+
+
+

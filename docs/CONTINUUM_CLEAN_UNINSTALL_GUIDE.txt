@@ -1,0 +1,48 @@
+CONTINUUM - CLEAN UNINSTALL GUIDE FOR WINDOWS
+============================================
+
+If you're getting installer corruption errors, follow these steps:
+
+STEP 1: MANUAL UNINSTALL (RECOMMENDED)
+---------------------------------------
+1. Press Windows Key + R
+2. Type: appwiz.cpl
+3. Press Enter
+4. Look for "Continuum" in the list
+5. Right-click on "Continuum" → "Uninstall"
+6. Follow the uninstall wizard
+
+STEP 2: ALTERNATIVE - CONTROL PANEL
+------------------------------------
+1. Open Settings (Windows Key + I)
+2. Go to Apps → Apps & features
+3. Search for "Continuum"
+4. Click on it → "Uninstall"
+
+STEP 3: CLEAN UP REMAINING FILES
+---------------------------------
+After uninstalling, delete these folders if they exist:
+- C:\Users\[YourUsername]\AppData\Local\continuum-app
+- C:\Users\[YourUsername]\AppData\Roaming\continuum-app
+- C:\Program Files\Continuum (if it exists)
+
+STEP 4: RESTART YOUR COMPUTER
+------------------------------
+Restart your Surface Pro 9 to clear any locked files.
+
+STEP 5: DOWNLOAD FRESH INSTALLER
+---------------------------------
+1. Delete the corrupted installer file completely
+2. Download a fresh copy from the provided link
+3. Make sure download completes fully before opening
+4. Right-click the new installer → "Run as administrator"
+
+TROUBLESHOOTING:
+- If Windows Defender blocks it: Click "More info" → "Run anyway"
+- If still corrupted: Try downloading to a different folder
+- If network issues: Try a different browser or download manager
+
+This should resolve the installer corruption issue!
+
+
+

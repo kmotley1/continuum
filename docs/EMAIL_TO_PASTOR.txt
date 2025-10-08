@@ -1,0 +1,87 @@
+SUBJECT: Continuum - Sermon Study App for Testing
+
+Hi Pastor,
+
+I've built a desktop app called "Continuum" that combines sermon planning, note-taking, Logos Bible Software, and AI assistance into one integrated environment. I'd love for you to test it out and give me feedback!
+
+🚀 WHAT IS CONTINUUM?
+- A desktop app that combines Logos Bible Software, ChatGPT, and note-taking
+- Calendar-based sermon planning
+- Rich text notes with export options
+- "Send to Chat" functionality to get AI help with your study
+- All integrated in one window
+
+⚠️ IMPORTANT: This is an updated version that fixes layout issues on Windows!
+
+📦 HOW TO GET IT:
+I'll share both versions via:
+1. Google Drive/Dropbox link (preferred)
+2. WeTransfer link 
+3. Or I can mail you a USB drive
+
+🛠️ INSTALLATION:
+
+FOR WINDOWS USERS (Surface Pro, PC, etc.):
+- File: "Continuum Setup 1.0.0.exe" (140MB)
+- Download and double-click the .exe file to run the installer
+- Follow the installation wizard (just click "Next" through the steps)
+- Launch "Continuum" from your Start Menu or desktop shortcut
+- If Windows Defender warns → Click "More info" → "Run anyway" (security feature)
+
+FOR MAC USERS (MacBook, iMac, etc.):
+- File: "Continuum-Test.zip" (272MB)
+- Download and double-click to unzip
+- Drag "Continuum.app" to your Applications folder
+- Open from Applications or Spotlight search
+- If macOS says "app can't be opened" → Right-click → Open (security feature)
+
+🔒 DATA ISOLATION:
+- Each user gets their own separate data folder
+- No shared accounts or login required
+- Your notes are completely separate from mine
+- No internet required for basic functionality
+
+✨ FEATURES TO TEST:
+1. **Calendar/Planner**: Click "Calendar" button to open sermon planning
+2. **Notes**: Click "Notes" button to open the note editor
+3. **Logos Integration**: If you have Logos, it should load automatically
+4. **AI Chat**: Click "Send to Chat" to send text to ChatGPT
+5. **Export**: Download notes as PDF, Word, or Pages format
+
+🔧 WHAT I NEED FROM YOU:
+1. Does it install and run without issues?
+2. Do the Logos and ChatGPT integrations work?
+3. Is the interface intuitive?
+4. Any features you'd like to see added?
+5. Any bugs or crashes?
+
+📱 SYSTEM REQUIREMENTS:
+- Windows (any recent version) OR macOS (any recent version)
+- Internet connection (for Logos and ChatGPT)
+- Optional: Logos Bible Software account
+
+💬 FEEDBACK:
+Please let me know:
+- What works well
+- What's confusing
+- What's missing
+- Any suggestions for improvement
+
+This is still in development, so I'm looking for real-world feedback from actual pastors like yourself. Your input would be incredibly valuable!
+
+Thanks for taking the time to test this out. Let me know if you have any questions or run into any issues.
+
+Blessings,
+[Your Name]
+
+P.S. - The app is completely free to use and doesn't collect any personal data. It's just a tool to help with sermon preparation and study.
+
+---
+
+TECHNICAL NOTES:
+- Windows: 140MB installer
+- macOS: 272MB zip file
+- No signup/login required
+- Data stored locally on your computer
+- Completely offline-capable (except for Logos/ChatGPT features)
+

@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    @apply border-gray-700;
+  }
+  
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow: hidden;
+    @apply bg-gray-900 text-gray-100;
+  }
+  
+  /* Ensure BrowserView containers are properly positioned */
+  .browser-view-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    @apply bg-gray-800;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-gray-800/90 backdrop-blur-sm border border-gray-700/50;
+  }
+  
+  .modern-button {
+    @apply bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500 
+           text-gray-200 hover:text-white transition-all duration-200 
+           focus:outline-none focus:ring-2 focus:ring-blue-500/50;
+  }
+  
+  .modern-input {
+    @apply bg-gray-800 border border-gray-600 text-gray-200 placeholder-gray-400
+           focus:border-blue-500 focus:ring-1 focus:ring-blue-500/50
+           transition-all duration-200;
+  }
+  
+  .accent-button {
+    @apply bg-blue-600 hover:bg-blue-700 border border-blue-500 hover:border-blue-400
+           text-white transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-blue-500/50;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .slide-in-from-right {
+    animation: slideInFromRight 0.3s ease-out;
+  }
+  
+  /* Window drag region for Electron */
+  .app-drag-region {
+    -webkit-app-region: drag;
+  }
+  
+  /* Disable drag for interactive elements */
+  .app-no-drag {
+    -webkit-app-region: no-drag;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
