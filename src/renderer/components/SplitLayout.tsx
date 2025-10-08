@@ -121,7 +121,7 @@ export default function SplitLayout() {
   if (!isLayoutLoaded || !layout || !layout.sizes || !layout.collapsed) {
     return (
       <div className="h-screen bg-gray-900 flex items-center justify-center">
-        <div className="text-white text-lg">Loading Continuum...</div>
+        <div className="text-white text-lg">Loading LogosBridge...</div>
       </div>
     );
   }

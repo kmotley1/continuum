@@ -11,7 +11,7 @@ export default function Onboarding({ onClose }: OnboardingProps) {
       <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
         <div className="p-6">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900">Welcome to Continuum</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Welcome to LogosBridge</h2>
             <button
               onClick={onClose}
               className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -23,7 +23,7 @@ export default function Onboarding({ onClose }: OnboardingProps) {
           <div className="space-y-6">
             <div className="text-gray-600">
               <p className="mb-4">
-                Continuum is your dedicated sermon preparation workspace that eliminates 
+                LogosBridge is your dedicated sermon preparation workspace that eliminates 
                 context-switching between Logos Bible Software and AI tools.
               </p>
             </div>
