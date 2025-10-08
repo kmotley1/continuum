@@ -54,12 +54,17 @@ coverage/
 *.rpm
 *.AppImage
 *.blockmap
+*.app/
+Continuum.app/
 
 # Archives and backups
 archives/
 *.zip
 *.tar.gz
 *.tar.bz2
+
+# Extracted source (already in dist/)
+extracted-source/
 
 # Temporary files
 tmp/
